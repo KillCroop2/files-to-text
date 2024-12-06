@@ -1,8 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Files to Text
+
+A modern web application built with Next.js 15 that converts various file types to text with a beautiful, responsive UI. Perfect for quickly viewing and copying text-based files.
+
+## Features
+
+- 🚀 **Fast File Processing**: Handles large files (up to 25MB) with chunk-based processing
+- 🔍 **Search Functionality**: Search across all loaded files in real-time
+- 📊 **File Statistics**: View aggregate stats including total size, lines, and file types
+- 💾 **Multiple File Types**: Supports various text-based formats:
+  - Programming: TypeScript, JavaScript, Python, Java, C++, Go, Ruby, PHP, etc.
+  - Data: JSON, JSONL, YAML, XML, CSV
+  - Markup: HTML, CSS, Markdown
+  - Plain text and more
+- 📋 **Copy Options**: 
+  - Copy individual files
+  - Copy all files with metadata headers
+  - Real-time copy feedback
+- 🎨 **Modern UI/UX**:
+  - Dark theme optimized for readability
+  - Responsive design
+  - Collapsible file views
+  - Drag and drop support
+  - Loading states and animations
+
+## Tech Stack
+
+- [Next.js 15](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Geist Font](https://vercel.com/font) - Typography
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+
+```bash
+git clone https://github.com/troland/files-to-text.git
+cd files-to-text
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +57,56 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Upload Files**:
+   - Drag and drop files onto the upload area
+   - Click to browse and select files
+   - Multiple files supported
 
-## Learn More
+2. **View Files**:
+   - Click on file headers to expand/collapse content
+   - View file metadata (size, lines, type)
+   - Search within files using the search bar
 
-To learn more about Next.js, take a look at the following resources:
+3. **Copy Content**:
+   - Use individual copy buttons for each file
+   - Use "Copy All Files" to copy everything with headers
+   - Content includes metadata for easy reference
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project uses Next.js with TypeScript. Key directories:
 
-## Deploy on Vercel
+```
+files-to-text/
+├── app/
+│   ├── components/    # React components
+│   ├── utils.ts      # Utility functions
+│   ├── layout.tsx    # Root layout
+│   └── page.tsx      # Main page
+├── public/           # Static assets
+└── package.json      # Dependencies
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+MIT License - feel free to use this project for personal or commercial purposes.
+
+## Author
+
+Tóth Roland - [troland.hu](https://troland.hu)
+
+## Acknowledgments
+
+- [Next.js](https://nextjs.org/) team for the amazing framework
+- [Vercel](https://vercel.com/) for Geist font
+- All contributors and users of this project
