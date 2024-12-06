@@ -16,7 +16,7 @@ export default function Footer() {
               troland.hu
             </a>
             <a
-              href="https://github.com/troland/files-to-text"
+              href="https://github.com/KillCroop2/files-to-text"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-neutral-400 hover:text-neutral-200 transition-colors inline-flex items-center gap-2 group"
